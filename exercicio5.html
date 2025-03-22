@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Par ou Ímpar</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+</style>
+<style>
+body {
+  background-image: url("fundo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #2c2a34;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: White;
+  color: #2c2a34;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #eaf6a9;
+}
+
+div {
+ 
+  margin: auto;
+  position: relative;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 450px;
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  background-color: #97abfb;
+  padding: 50px;
+}
+</style>
+<body>
+
+<div>
+  <form method="POST" action="exercicio5.php">
+    <label for="numerodigitado"><p>Digite um número</p></label>
+    <input type="text" id="fname" name="numerodigitado" placeholder="Escolha um número inteiro">
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+</body>
+</html>

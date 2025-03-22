@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário para Horas Complementares</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+    body {
+      background-image: url("fundo.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #2c2a34;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: White;
+      color: #2c2a34;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #eaf6a9;
+    }
+    
+    div {
+     
+    margin: auto;
+    position: relative;
+    top: 80px;
+    right: 0;
+    width: 400px;
+    height: 440px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(241, 30, 30);
+    border-radius: 5px;
+    background-color: #97abfb;
+    padding: 50px;
+    }
+    
+    .button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: fixed;
+  bottom: 15px;
+  right: 5px;
+  cursor: pointer;
+  background-color: #97abfb;
+  box-shadow: 0 9px #999;
+  
+}
+
+.button:hover {background-color: #eaf6a9}
+
+.button:active {
+  background-color: #eaf6a9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2 {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: fixed;
+  bottom: 15px;
+  left: 5px;
+  cursor: pointer;
+  background-color: #97abfb;
+  box-shadow: 0 9px #999;
+  
+}
+
+.button2:hover {background-color: #eaf6a9}
+
+.button2:active {
+  background-color: #eaf6a9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+    </style>
+
+<body>
+   
+   <div>
+    <form name="somarhoras" action="somarcarga.php" method="post">
+        
+        <label for="matriculacarga">Informe a Matrícula</label>
+        <input type="text" id="matriculacarga" name="matriculacarga" placeholder="Preenchimento obrigatório" required><br><br>
+        
+        <label for="novocurso">Informe a atividade complementar</label>
+        <input type="text" id="novocurso" name="novocurso" placeholder="Preenchimento obrigatório" required><br><br>
+        
+        <label for="horas">Informe a carga horária</label>
+        <input type="text" id="horas" name="horas" placeholder="Preenchimento obrigatório. Informe apenas números" required><br><br>
+              
+        <input type="submit" value="Enviar"/>
+        <input type="reset" name="botao" value="Limpar"/><br><br>
+    </form>
+</div>
+
+<a href="formulario.html" class="button2"><b>Voltar para o formulário</b></a>
+<a href="principal.html" class="button"><b>Voltar para a página inicial</b></a>
+
+</body>
+</html>

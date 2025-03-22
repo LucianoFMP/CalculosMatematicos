@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Cadastro</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+    body {
+      background-image: url("fundo.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #2c2a34;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: White;
+      color: #2c2a34;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #eaf6a9;
+    }
+    
+    div {
+     
+    margin: auto;
+    position: relative;
+    top: 80px;
+    right: 0;
+    width: 400px;
+    height: 1230px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(241, 30, 30);
+    border-radius: 5px;
+    background-color: #97abfb;
+    padding: 50px;
+    }
+    
+    .button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: fixed;
+  bottom: 15px;
+  right: 5px;
+  cursor: pointer;
+  background-color: #97abfb;
+  box-shadow: 0 9px #999;
+  
+}
+
+.button:hover {background-color: #eaf6a9}
+
+.button:active {
+  background-color: #eaf6a9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2 {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: fixed;
+  bottom: 15px;
+  left: 5px;
+  cursor: pointer;
+  background-color: #97abfb;
+  box-shadow: 0 9px #999;
+  
+}
+
+.button2:hover {background-color: #eaf6a9}
+
+.button2:active {
+  background-color: #eaf6a9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+</style>
+
+<body>
+   
+   <div>
+    <form name="cadastro" action="cadastro.php" method="post">
+        
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Preenchimento obrigatório" required><br><br>
+        
+        <label for="matricula">Matrícula</label>
+        <input type="text" id="matricula" name="matricula" placeholder="Preenchimento obrigatório" required><br><br>
+       
+        <label for="curso">Curso</label>
+        <input type="text" id="curso" name="curso" placeholder="Preenchimento obrigatório" required><br><br>
+
+        <label for="email">E-mail institucional</label>
+        <input type="text" id="email" name="email" placeholder="Preenchimento obrigatório" required><br><br>
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone" placeholder="Preenchimento obrigatório. Informe somente números" required><br><br>
+           
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Preenchimento obrigatório" required><br><br>
+
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" name="cep" placeholder="Preenchimento obrigatório. Informe somente números" required><br><br>
+        
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Preenchimento obrigatório" required><br><br>
+
+        <label for="uf">UF</label>
+        <select name="uf" id="uf" required>
+            <option value="" disabled selected>Escolha seu estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select><br><br>
+        
+        <label for="complementares">Curso para horas complementares</label>
+        <input type="text" id="complementares" name="complementares"><br><br>
+
+        <label for="carga">Carga horária</label>
+        <input type="text" id="carga" name="carga" placeholder="Informe somente números"><br><br>
+
+        <input type="submit" value="Enviar"/>
+        <input type="reset" name="botao" value="Limpar"/><br><br>
+    </form>
+</div>
+
+
+<a href="somarcarga.html" class="button2"><b>Adicionar novo Curso Complementar</b></a>
+<a href="index.html" class="button"><b>Voltar para a página inicial</b></a>
+
+</body>
+</html>
